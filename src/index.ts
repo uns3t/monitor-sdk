@@ -1,6 +1,6 @@
-function test() {
-  console.log(1);
-  return 1;
-}
+import initPvMonitor from "./monitor/history";
 
-test();
+initPvMonitor();
+window.addHistoryListener('history',function(){
+  console.log('窗口的history改变了');
+})
