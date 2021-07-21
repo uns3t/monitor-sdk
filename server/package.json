@@ -1,27 +1,26 @@
 {
-  "name": "koa2-start-basic",
-  "version": "1.0.0",
-  "description": "Koa2快速启动基础框架",
-  "main": "app.js",
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
+    "start": "node bin/www",
+    "dev": "./node_modules/.bin/nodemon bin/www",
+    "prd": "pm2 start bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hai-27/koa2-start-basic.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hai-27/koa2-start-basic/issues"
-  },
-  "homepage": "https://github.com/hai-27/koa2-start-basic#readme",
   "dependencies": {
-    "koa": "^2.11.0",
-    "koa-body": "^4.1.1",
-    "koa-router": "^8.0.8",
-    "koa-session": "^5.13.1",
+    "debug": "^4.1.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "mysql": "^2.18.1"
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
